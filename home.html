@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SUSTAIN.ABLE</title>
+		<link href="main.css" rel="stylesheet" type=text/css />
+		<script src="scripts/main.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+		<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+		<!--this prevents right clicking-->
+				<script type="text/javascript">
+		function disableselect(e){
+		return false
+		}
+
+		function reEnable(){
+		return true
+		}
+
+		//if IE4+
+		document.onselectstart=new Function ("return false")
+		document.oncontextmenu=new Function ("return false")
+		//if NS6
+		if (window.sidebar){
+		document.onmousedown=disableselect
+		document.onclick=reEnable
+		}
+		</script>
+</head>
+
+<header style="background-color:#eef8e8;">
+	<body>
+		<table>
+			<tr>
+				<td>
+					<h1 id="titleh1">Welcome to</h1>
+					<h1 id="titleh12">SUSTAIN.ABLE</h1>
+					<p id="titlep">The new way to educate yourself about sustainable brands and explore them.</p>
+					<button class="button" >EXPLORE</button>
+	</td>
+	<td>
+		<center>
+		<img id="logo" src="headerlogo.jpg">
+	</center>
+	</td>
+</tr>
+</table>
+	</body>
+</header>
+</html>
