@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SEARCH</title>
+		<link href="search.css" rel="stylesheet" type=text/css />
+		<script src="scripts/main.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+		<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+		<!--this prevents right clicking-->
+				<script type="text/javascript">
+		function disableselect(e){
+		return false
+		}
+
+		function reEnable(){
+		return true
+		}
+
+		//if IE4+
+		document.onselectstart=new Function ("return false")
+		document.oncontextmenu=new Function ("return false")
+		//if NS6
+		if (window.sidebar){
+		document.onmousedown=disableselect
+		document.onclick=reEnable
+		}
+		</script>
+</head>
+<header>
+	<a id="aa" href="index.html"><p>HOME</p></a>
+</header>
+	<section>
+	<body>
+		<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+<center>
+	<input class="fade-in" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a company">
+</center> 
+<ul class="fade-in" id="myUL">
+
+				<li><a href="#">Adidas</a></li>
+				<li><a href="#">Asics</a></li>
+				<li><a href="#">Alexander McQueen</a></li>
+				<li><a href="#">American Apparel</a></li>
+				<li><a href="#">American Eagle</a></li>
+				<li><a href="#">Abercrombie</a></li>
+				<li><a href="#">ASOS</a></li>
+				<li><a href="#">Allsaints</a></li>
+				<li><a href="#">Aldo</a></li>
+				<li><a href="#">Aéropostale</a></li>
+				<li><a href="#">Anne Klein</a></li>
+				<li><a href="#">ACME</a></li>
+				<li><a href="#">AVON</a></li>
+				<li><a href="#">Ann Taylor</a></li>
+				<li><a href="#">Billabong</a></li>
+				<li><a href="#">Bearpaw</a></li>
+				<li><a href="#">brooks</a></li>
+				<li><a href="#">Alberto</a></li>
+				<li><a href="#">Alberto</a></li>
+
+			</ul>
+		</body>
+	</section>
+</html>

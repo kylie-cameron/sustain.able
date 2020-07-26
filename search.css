@@ -1,0 +1,101 @@
+html, body, h1, p {
+ margin: 0 auto;
+ padding: 0 auto;
+}  
+html {
+   background-image: url('searchbackground.jpg');
+  font-family: 'Roboto', sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#aa {
+  margin-top:1%;
+  margin-right:1%;
+  float:right;
+  text-decoration:none;
+  color:#eef8e8;
+}
+#myInput {
+  margin-top:3%;
+  width: 80%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #004a33; 
+  margin-bottom: 3%; /* Add some space below the input */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  opacity:0.9;
+   text-decoration: none; /* Remove default text underline */
+  background-color: #eef8e8; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  font-size: 18px; /* Increase the font-size */
+  color: #004a33; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+button {
+  text-decoration:none;
+  float:right;
+  color:#eef8e8;
+  background:transparent;
+  border:transparent;
+}
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
