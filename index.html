@@ -58,23 +58,69 @@
 	</body>
 </header>
 
+<style type="text/css">
+	
+table {
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0.5em;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+thead th {
+  background-color: #999;
+  color: white;
+}
+
+td > div {
+  float: right;
+}
+
+@media only screen and (max-width: 40em) {
+  thead th:not(:first-child) {
+    display: none;
+  }
+  td, th {
+    display: block;
+    clear: both;
+  }
+  td[data-th]:before {
+    content: attr(data-th);
+    float: left;
+  }
+}
+</style>
 
 <section>
-	<table border="0">
-  <tr  class="header">
-    <td colspan="2"><nav><ul>
+	<table style="background-color:#eef8e8;">
+    <thead>
+        <tr>
+            <th><nav><ul>
 				<li><a class="fade-in" href="#aboutme">ABOUT</a></li>
 				<li><a class="fade-in" href="search.html">SEARCH</a></li>
 				<li><a class="fade-in" href="#aboutme">STATS</a></li>
 				<li><a class="fade-in" href="index.html">HOME</a></li>
-			</ul></nav></td>
-  </tr>
-  <tr>
-    <td><h1 class="fade-in" id="titleh1">Welcome to</h1>
+			</ul></nav></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><h1 class="fade-in" id="titleh1">Welcome to</h1>
 						<h1 class="fade-in" id="titleh12">SUSTAIN.ABLE</h1>
-						<p class="fade-in" id="titlep">The new way to educate yourself about sustainable brands and support them.
-						<a href="#hilly"><button class="fade-in" id="button" >EXPLORE</button></a></p></td>
-    <td><img class="fade-in" id="logo" src="headerlogo.jpg"></td>
-  </tr>
+						<p class="fade-in" id="titlep">The new way to educate yourself about sustainable brands and support them.</p>
+						<a href="#hilly"><button class="fade-in" id="button" >EXPLORE</button></a></td>
+            <td data-th="Small"><center>
+						<img class="fade-in" id="logo" src="headerlogo.jpg">
+					</center></td>
+        </tr>
+    </tbody>
+</table>
 </section>
 </html>
