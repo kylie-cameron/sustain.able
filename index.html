@@ -3,123 +3,44 @@
 <head>
 	<title>Sustain.able</title>
 		<link href="main.css" rel="stylesheet" type=text/css />
-		<script src="scripts/main.js"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 		<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="HandheldFriendly" content="true">
-		<!--this prevents right clicking-->
-				<script type="text/javascript">
-		function disableselect(e){
-		return false
-		}
-
-		function reEnable(){
-		return true
-		}
-
-		//if IE4+
-		document.onselectstart=new Function ("return false")
-		document.oncontextmenu=new Function ("return false")
-		//if NS6
-		if (window.sidebar){
-		document.onmousedown=disableselect
-		document.onclick=reEnable
-		}
-		</script>
+	
 </head>
 <header style="background-color:#eef8e8;">
-	<body>
-		<table>
-			<tr>
-				<td></td>
-				<td><nav><ul>
-				<li><a class="fade-in" href="#aboutme">ABOUT</a></li>
-				<li><a class="fade-in" href="search.html">SEARCH</a></li>
-				<li><a class="fade-in" href="#aboutme">STATS</a></li>
-				<li><a class="fade-in" href="index.html">HOME</a></li>
-			</ul></nav></td>
-			</tr>
-				<tr>
-					<td>
-						<h1 class="fade-in" id="titleh1">Welcome to</h1>
-						<h1 class="fade-in" id="titleh12">SUSTAIN.ABLE</h1>
-						<p class="fade-in" id="titlep">The new way to educate yourself about sustainable brands and support them.</p>
-						<a href="#hilly"><button class="fade-in" id="button" >EXPLORE</button></a>
-					</td>
-					<td>
-						<center>
-						<img class="fade-in" id="logo" src="headerlogo.jpg">
-					</center>
-				</td>
-			</tr>
-		</table>
-	</body>
+	<nav><ul><center>
+		<li><a class="fade-in" href="index.html">HOME</a></li>
+		<li><a class="fade-in" href="search.html">SEARCH</a></li>
+		<li><a class="fade-in" href="search.html">SHOP</a></li>
+	</center></ul></nav>
 </header>
 
-<style type="text/css">
-	
-table {
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0.5em;
-}
-
-th {
-  font-weight: bold;
-  text-align: left;
-}
-
-thead th {
-  background-color: #999;
-  color: white;
-}
-
-td > div {
-  float: right;
-}
-@media only screen and (max-width: 40em) {
-  thead th:not(:first-child) {
-    display: none;
-  }
-  td, th {
-    display: block;
-    clear: both;
-  }
-  td[data-th]:before {
-    content: attr(data-th);
-    float: left;
-  }
-}
-</style>
-
-<section>
-	<table style="background-color:#eef8e8;">
-    <thead>
-        <tr>
-            <th><nav><ul>
-				<li><a class="fade-in" href="#aboutme">ABOUT</a></li>
-				<li><a class="fade-in" href="search.html">SEARCH</a></li>
-				<li><a class="fade-in" href="#aboutme">STATS</a></li>
-				<li><a class="fade-in" href="index.html">HOME</a></li>
-			</ul></nav></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><h1 class="fade-in" id="titleh1">Welcome to</h1>
-						<h1 class="fade-in" id="titleh12">SUSTAIN.ABLE</h1>
-						<p class="fade-in" id="titlep">The new way to educate yourself about sustainable brands and support them.</p>
-						<a href="#hilly"><button class="fade-in" id="button" >EXPLORE</button></a></td>
-            <td data-th="Small"><center>
-						<img class="fade-in" id="logo" src="headerlogo.jpg">
-					</center></td>
-        </tr>
-    </tbody>
-</table>
-</section>
+<section style="background-color:#eef8e8;">
+	<body>
+			<img class="fade-in" id="logo" src="headerlogo2.jpg">
+			<h1 class="fade-in" id="titleh1">Welcome to</h1>
+			<h1 class="fade-in" id="titleh12">SUSTAIN.ABLE</h1>
+			<p class="fade-in" id="titlep">The new way to educate yourself about sustainable brands and support them.</p>
+			<a href="#hilly"><button class="fade-in" id="button" >EXPLORE</button></a>
+			<br>
+		</body>
+	</section>
+		
+	<section style="background-color:#004a33;">
+		<center>
+			<body>
+				<br>
+				<div id="square">
+					<br>
+					<h1 id="aboutush1">ABOUT US</h1>
+					<p id="aboutusp">Sustain.Able was made after realizing how wastful we are ever day, and how simple of a fix it is. A paper towel can be replaced for a cloth towl. A plastic baggie can be replaced with a silicon one, or glass containers. Sustain.Able's goal is to promot sustainable living while also making it even easier.</p>
+					<br>
+				</div>
+				<br>
+			</body>
+		</center>
+	</section>
 </html>

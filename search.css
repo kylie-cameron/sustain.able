@@ -3,7 +3,8 @@ html, body, h1, p {
  padding: 0 auto;
 }  
 html {
-   background-image: url('searchbackground.jpg');
+   /*background-image: url('searchbackground.jpg');*/
+   background-color:#004a33;
   font-family: 'Roboto', sans-serif;
   -webkit-background-size: cover;
   -moz-background-size: cover;
