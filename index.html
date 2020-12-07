@@ -1,46 +1,245 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sustain.able</title>
-		<link href="main.css" rel="stylesheet" type=text/css />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-		<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
-		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="HandheldFriendly" content="true">
-	
-</head>
-<header style="background-color:#eef8e8;">
-	<nav><ul><center>
-		<li><a class="fade-in" href="index.html">HOME</a></li>
-		<li><a class="fade-in" href="search.html">SEARCH</a></li>
-		<li><a class="fade-in" href="search.html">SHOP</a></li>
-	</center></ul></nav>
-</header>
+	<title>We Can</title>
+	<link href="main.css" rel="stylesheet" type=text/css />
+	<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
 
-<section style="background-color:#eef8e8;">
-	<body>
-			<img class="fade-in" id="logo" src="headerlogo2.jpg">
-			<h1 class="fade-in" id="titleh1">Welcome to</h1>
-			<h1 class="fade-in" id="titleh12">SUSTAIN.ABLE</h1>
-			<p class="fade-in" id="titlep">The new way to educate yourself about sustainable brands and support them.</p>
-			<a href="#hilly"><button class="fade-in" id="button" >EXPLORE</button></a>
-			<br>
-		</body>
-	</section>
-		
-	<section style="background-color:#004a33;">
+	<script>
+	window.addEventListener("resize", getTemplate);
+
+CurrentPage = 'index.html';
+
+window.addEventListener("resize", getTemplate);
+
+CurrentPage = 'DesktopPage';
+
+function getTemplate() {
+	if (screen.width >= 767 && CurrentPage != 'DesktopPage') {
+			return window.location.replace("index.html");
+	}
+
+	if (screen.width < 767 && CurrentPage != 'MobilePage') {
+			return window.location.replace("mobile.html");
+	}
+}
+
+getTemplate();
+</script>
+</head>
+
+<section id="head">
+<table id="headnav">
+	<tr>
+			<td id="titletd">We Can</td>
+			<td><a id="nav1" href="index.html">Home</a></td>
+			<td><a id="nav" href="#aboutcir">About</a></td>
+			<td><a id="nav" href="#teamimg">Team</a></td>
+			<td><a id="nav" href="#evaimg">Articles</a></td>
+			<td><a id="nav" href="#contact">Contact</a></td>
+			<td><a id="nav" href="#socials">Socials</a></td>
+		</tr>
+		<tr>
+			<td>
+				<h1 id="headh1">We Can</h1>
+				<p id="headp">A student led nonprofit dedicated<br> to bringing STEAM education to all.</p>
+			</td>
+		</tr>
+	</table>
+</section>
+		<table>
+			<tr>
+				<td><img id="aboutcir" src="aboutcir.jpg"></td>
+				<td></td>
+				<td>
+					<h1 id="abouth1">Making STEAM education accessible</h1>
+ 		       <p id="aboutp">Our goal is to make STEAM education more</p>
+ 		       <p id="aboutp">accessible to kids and yound adults in areas with</p>
+ 		       <p id="aboutp">little to no opportunities. We believe that the</p>
+ 		       <p id="aboutp">best way to do this is through mentorship, education, and experience</p>
+				 </td>
+			</tr>
+		</table>
+
+<section style="background-color:#e3effb;">
+	<center><h1 id="reachhead">Our Reach</h1></td></center>
+	<center>
+		<table>
+				<td>
+					<center>
+					<h1 id="reachh1">3,000+</h1>
+					<p id="reachp">Instagram Followers</p>
+				</center>
+				</td>
+				<td>
+					<center>
+					<h1 id="reachh1">360+</h1>
+					<p id="reachp">Slack Members</p>
+				</center>
+				</td>
+				<td>
+					<center>
+					<h1 id="reachh1">7+</h1>
+					<p id="reachp">Countries Reached</p>
+				</center>
+				</td>
+			</center>
+			</tr>
+		</table>
+	</center>
+</section>
+
 		<center>
-			<body>
-				<br>
-				<div id="square">
-					<br>
-					<h1 id="aboutush1">ABOUT US</h1>
-					<p id="aboutusp">Sustain.Able was made after realizing how wastful we are ever day, and how simple of a fix it is. A paper towel can be replaced for a cloth towl. A plastic baggie can be replaced with a silicon one, or glass containers. Sustain.Able's goal is to promot sustainable living while also making it even easier.</p>
-					<br>
-				</div>
-				<br>
-			</body>
+			<h1 id="ourteam">Meet Our Team</h1>
+
+	<table>
+		<tr>
+			<td style="padding:50px;">
+				<center>
+				<a href="https://kylie-cameron.github.io/KylieCameron/"><img id="teamimg" src="kylie.jpg"></a>
+				<h4 id="teamh4">Kylie Cameron</h4>
+				<p id="teamp">Executive Director</p>
+			</center>
+			</td>
+			<td style="padding:50px;">
+				<center>
+				<img id="teamimg" src="charleen.jpg">
+				<h4 id="teamh4">Charleen Chen</h4>
+				<p id="teamp">Head Graphic Designer</p>
+			</center>
+			</td>
+			<td style="padding:50px;">
+				<center>
+				<img id="teamimg" src="sanjana.jpg">
+				<h4 id="teamh4">Sanjana Kulkarni</h4>
+				<p id="teamp">Head Writer</p>
+			</center>
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td style="padding:50px;">
+				<center>
+				<img id="teamimg" src="ria.jpg">
+				<h4 id="teamh4">Ria Kundu</h4>
+				<p id="teamp">Graphic Designer</p>
+			</center>
+			</td>
+			<td style="padding:50px;">
+				<center>
+				<img id="teamimg" src="madeleine.jpg">
+				<h4 id="teamh4">Madeleine Willett</h4>
+				<p id="teamp">Graphic Designer</p>
+			</center>
+			</td>
+			<td style="padding:50px;">
+				<center>
+				<img id="teamimg" src="beren.jpg">
+				<h4 id="teamh4">Beren Unal</h4>
+				<p id="teamp">Graphic Designer</p>
+			</center>
+			</td>
+			<td style="padding:50px;">
+				<center>
+				<img id="teamimg" src="salwa.jpg">
+				<h4 id="teamh4">Salwa Din</h4>
+				<p id="teamp">Graphic Designer</p>
+			</center>
+			</td>
+		</tr>
+	</table>
+
+<table>
+	<tr>
+		<td style="padding:50px;">
+			<center>
+			<img id="teamimg" src="anusha.jpg">
+			<h4 id="teamh4">Anusha Banninthaya</h4>
+			<p id="teamp">Writer</p>
 		</center>
+		</td>
+		<td style="padding:50px;">
+			<center>
+			<img id="teamimg" src="tim.jpg">
+			<h4 id="teamh4">Tim Adkins</h4>
+			<p id="teamp">Writer</p>
+		</center>
+		</td>
+		<td style="padding:50px;">
+			<center>
+			<img id="teamimg" src="divya.jpg">
+			<h4 id="teamh4">Divya Pothula</h4>
+			<p id="teamp">Writer</p>
+		</center>
+	</tr>
+</table>
+</center>
+
+<section style="background-color:#e3effb;">
+	<center>
+		<h1 id="Mailh1">Join Our Mailing List</h1>
+		<p id="Mailp">Enter your email below to be updated on our events, new articles, and open positions on our team</p>
+	<form
+	  action="https://formspree.io/xzbjaddy"
+	  method="POST">
+	  <label>
+	    Your email:
+	    <input type="text" name="_replyto">
+	  </label>
+	  <button id="mailbutton" type="submit">Submit</button>
 	</section>
+	</form>
+</center>
+
+<center>
+	<section style="background-color:#f9f9f9;">
+	<h1 id="arth1">Articles</h1>
+	<p id="artp">Click below to read one of the articles written by our team about women in STEAM</p>
+
+			<a href="eva.html"><img id="evaimg"src="evabackground.jpg"></a><a href="Daisy.html"><img id="evaimg"src="daisybackground.jpg"></a>
+			<a href="tiffany.html"><img id="evaimg"src="tiffanybackground.jpg"></a><a href="paulina.html"><img id="evaimg"src="paulinabackground.jpg"></a>
+			<a href="stephanie.html"><img id="evaimg"src="stephaniebackground.jpg"></a><a href="samantha.html"><img id="evaimg"src="samanthabackground.jpg"></a>
+			<a href="raquel.html"><img id="evaimg"src="raquelbackground.jpg">
+		</section>
+</center>
+
+<section id="contact" style="background-color:#e3effb;">
+	<center>
+		<h1 id="Mailh1">Contact Us</h1>
+		<p id="Mailp">Lets chat! Enter your message below and we'll contact you!</p>
+		<form
+	  action="https://formspree.io/mvowqljb"
+	  method="POST"
+	>
+	  <label id="lab1">
+	    Your email:<br>
+	    <input type="text" name="_replyto">
+	  </label><br>
+	  <label id="lab2">
+	    Your message:<br>
+	    <textarea name="message"></textarea>
+	  </label><br>
+	  <button id="mailbutton" type="submit">Send</button>
+	</section>
+	</form>
+</center>
+
+<center>
+  <body>
+    <section id="socials">
+			<a href="https://medium.com/@we.cann.create"><img id="footsoc" src="medium.png"></a>
+			<a href="https://www.instagram.com/wecansteam/"><img id="footsoc" src="instagram.png"></a>
+			<a href="https://www.linkedin.com/company/we-can-stem-and-business"><img id="footsoc" src="linkedin.png"></a>
+			<a href="mailto:wecanncreate@gmail.com"><img id="footsoc" src="mail.png"></a>
+      <p id="copyright" class="mono">&#xa9; <script>document.write(new Date().getFullYear())</script> We Can.</p>
+      <p id="made">site made by<a href="https://kylie-cameron.github.io/KylieCameron/" class="mono" target="_"> Kylie Cameron.</a></p>
+      </center>
+    </body>
+	</section>
+
 </html>
