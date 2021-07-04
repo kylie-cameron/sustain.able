@@ -1,0 +1,53 @@
+/*STYLE NAVBAR & NAME*/
+#namep, nav ul {
+	display: inline;
+}
+nav ul li {
+	font-size: 25px;
+	float:right;
+	list-style-type: none;
+	padding-left:15px;
+  text-transform: uppercase;
+  padding-top:2%;
+}
+nav ul li a {
+  color: #43453d;
+	text-decoration:none;
+}
+ul li {
+	display: inline-block;
+}
+#move1 {
+  padding-right:34px;
+}
+
+/*STYLE HEADER*/
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  margin:0;
+  padding:0;
+  color: #656b59;
+}
+
+/*STYLE QUIZ*/
+#quizh2 {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+  color: #43453d;
+}
+
+/*STYLE FOOTER*/
+.mono {
+	text-decoration:none;
+	margin-left:.5%;
+	margin-bottom:5%;
+	font-size:1.2rem;
+	color:#6a6a6a;
+}
+.theemail {
+	text-decoration:none;
+	color:black;
+}
